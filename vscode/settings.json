@@ -11,7 +11,6 @@
   "editor.lineNumbers": "relative",
   "editor.formatOnSave": false,
   "editor.renderWhitespace": "all",
-  "files.trimTrailingWhitespace": true,
   "vim.easymotion": true,
   "vim.easymotionKeys": "abcdefghijklmnopqrstuvwxyz",
   "vim.incsearch": true,
@@ -96,4 +95,5 @@
   "terminal.integrated.defaultProfile.osx": "zsh",
   "window.zoomLevel": 1,
   "search.followSymlinks": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
 }
