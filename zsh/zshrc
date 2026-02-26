@@ -165,3 +165,27 @@ bindkey -M viins 'jk' vi-cmd-mode
 
 
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/kevinmcmanamon/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+
+# add asdf for easily switching between Go versions:
+. $(brew --prefix asdf)/libexec/asdf.sh
+export PATH="$HOME/.asdf/shims:$PATH"
+
+export GPG_TTY=$(tty)
+
+lock() {
+  caffeinate -d &
+  osascript -e 'tell application "System Events" to keystroke "q" using {control down, command down}'
+}
