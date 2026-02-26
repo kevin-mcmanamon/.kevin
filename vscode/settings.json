@@ -96,4 +96,8 @@
   "window.zoomLevel": 1,
   "search.followSymlinks": false,
   "github.copilot.nextEditSuggestions.enabled": true,
+  "git.blame.editorDecoration.enabled": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "chat.viewSessions.orientation": "stacked",
 }

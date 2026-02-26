@@ -176,3 +176,16 @@ fpath=(/Users/kevinmcmanamon/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+
+
+# add asdf for easily switching between Go versions:
+. $(brew --prefix asdf)/libexec/asdf.sh
+export PATH="$HOME/.asdf/shims:$PATH"
+
+export GPG_TTY=$(tty)
+
+lock() {
+  caffeinate -d &
+  osascript -e 'tell application "System Events" to keystroke "q" using {control down, command down}'
+}
