@@ -190,3 +190,4 @@ lock() {
 
 bindkey '^R' history-incremental-search-backward
 
+export PATH="$HOME/.local/bin:$PATH"
